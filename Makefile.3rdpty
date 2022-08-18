@@ -1,5 +1,7 @@
 all: dash-p4 sai thirdparty-saithrift-server docker-saithrift-client
 
+clean: dash-p4-clean dash-sai-clean
+
 # Submodule location relative to this Makefile
 DASHDIR ?=DASH
 
@@ -18,10 +20,6 @@ dash-pipeline-regression: DASH
 dash-pipeline-clean: DASH
 	$(MAKE) -C $(DASHDIR)/dash-pipeline clean
 
-.PHONY: dash-submodule
-dash-submodule:
-	git submodule update --init DASH
-
 .PHONY: sai
 sai: dash-sai-clean dash-sai-headers dash-sai-meta thirdparty-libsai
 
@@ -29,6 +27,9 @@ sai: dash-sai-clean dash-sai-headers dash-sai-meta thirdparty-libsai
 # Build behavioral model code, needed for SAI headers
 dash-p4:
 	$(MAKE) -C $(DASHDIR)/dash-pipeline p4
+
+dash-p4-clean:
+	$(MAKE) -C $(DASHDIR)/dash-pipeline p4-clean
 
 dash-sai-clean:
 	$(MAKE) -C $(DASHDIR)/dash-pipeline sai-clean
