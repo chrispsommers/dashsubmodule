@@ -4,7 +4,7 @@ This mini-project is the simplest example of importing [Azure/DASH project](http
 >**TODO** Change URLs to upstream branch when merged).
 
 # Step 1: Regression-test of Community DASH Submodule
-You can clone this project and do the following to replicate this project and perform a local sanity-check. It will clone DASH submodule, pull docker images and build all community DASH artifacts. You won't necessarily use them in your parent project but it ensures a good starting point. Once you feel confident, you can follow the [Quick-Start](https://github.com/chrispsommers/DASH/blob/doc-dash-as-submodule/dash-pipeline/README-dash-as-submodule.md#quick-start) instructions in your own Git project.
+You can clone this project following the instructions below, to replicate this project and perform a local sanity-check. It will clone DASH submodule, pull docker images and build all community DASH artifacts. You won't necessarily use them in your parent project but it ensures a good starting point. Once you feel confident, you can follow the [Quick-Start](https://github.com/chrispsommers/DASH/blob/doc-dash-as-submodule/dash-pipeline/README-dash-as-submodule.md#quick-start) instructions in your own Git project.
 
 The end-result in your workspace will be as follows:
 ![submodule-hierarchy](submodule-hierarchy.svg)
