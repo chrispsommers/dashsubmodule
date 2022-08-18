@@ -1,10 +1,13 @@
 # dashsubmodule - Example project of using DASH as a Git Submodule
 
-This mini-project is the simplest example of importing [Azure/DASH project](https://github.com/Azure/DASH) as  Git Submodule into a "parent project." I followed the [Quick-Start](https://github.com/chrispsommers/DASH/blob/doc-dash-as-submodule/dash-pipeline/README-dash-as-submodule.md#quick-start) instructions documented in the DASH repo. No customization was done. The only objective was to perform the importing and commit the `.gitmodules` and `DASH/` items.
+This mini-project is the simplest example of importing [Azure/DASH project](https://github.com/Azure/DASH) as  Git Submodule into a "parent project." I followed the [Quick-Start](https://github.com/chrispsommers/DASH/blob/doc-dash-as-submodule/dash-pipeline/README-dash-as-submodule.md#quick-start) instructions documented in the DASH repo. No customization was done. The only steps were to perform the importing and commit the `.gitmodules` file and `DASH/` directory additions.
 >**TODO** Change URLs to upstream branch when merged).
 
 # Step 1: Regression-test of Community DASH Submodule
 You can clone this project and do the following to replicate this project and perform a local sanity-check. It will clone DASH submodule, pull docker images and build all community DASH artifacts. You won't necessarily use them in your parent project but it ensures a good starting point. Once you feel confident, you can follow the [Quick-Start](https://github.com/chrispsommers/DASH/blob/doc-dash-as-submodule/dash-pipeline/README-dash-as-submodule.md#quick-start) instructions in your own Git project.
+
+The end-result in your workspace will be as follows:
+![submodule-hierarchy](submodule-hierarchy.svg)
 ## Build dash-pipeline
 ```
 git clone https://github.com/chrispsommers/dashsubmodule
