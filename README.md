@@ -16,9 +16,9 @@ make -f Makefile.3rdpty dash-pipeline-regression
 The two make commands above are equivalent to running the `make clean && make all` commands under `DASH/dash-pipeline`.
 
 ## Test dash-pipeline
-To run the community switch and saithrift tests as another sanity check. It will confirm your environment can perform SW traffic-generator tests with the DASH bmv2 pipeline, which is a good jump-off point for third-party integration and customization.
+This runs the community switch and saithrift tests as another sanity check. It will confirm your environment can perform SW traffic-generator tests with the DASH bmv2 pipeline, which is a good jump-off point for third-party integration and customization.
 
-You can descend into the submodule, i.e. the DASH/dash-pipeline "workspace," any time as a way to cross-check your own third-party efforts, all in the comfort of your parent project's workspace. Put another way: changing into the DASH submodule directory is (nearly) identical to working within a separately cloned copy of DASH.
+You can descend into the submodule, i.e. the DASH/dash-pipeline "workspace," any time, as a way to cross-check your own third-party efforts, all in the convenience of your parent project's workspace. Put another way: changing into the DASH submodule directory is (nearly) identical to working within a separately cloned copy of DASH.
 ```
 cd DASH/dash-pipeline
 make run-switch         # console 1
@@ -37,9 +37,6 @@ This will build artifacts such as P4Info, SAI headers etc. and print placeholder
 ```
 ...various build steps...
 
- [ SAI_STATUS_SUCCESS ]
-
-sudo chmod -R o+rw SAI/
 make[1]: Leaving directory '/home/chris/dashsubmodule/DASH/dash-pipeline'
 Build third-pary libsai
    Put libsai.so under DASH/dash-pipeline/SAI/lib
